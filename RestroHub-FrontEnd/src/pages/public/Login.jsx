@@ -15,7 +15,7 @@ const API_BASE_URL =
 
 const validationSchema = Yup.object({
     username: Yup.string().required("Email or username is required"),
-  password: Yup.string()
+    password: Yup.string()
     .min(6, "Password must be at least 6 characters")
     .required("Password is required"),
 });
